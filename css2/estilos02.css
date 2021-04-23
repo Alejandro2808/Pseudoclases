@@ -1,0 +1,465 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: auto;
+}
+nav{
+	background-color: #FF0000;
+	height: 4rem
+}
+header{
+	background-color: #FFFF00;
+	height: 4rem
+}
+.cverde{
+	background-color: #00FF00;
+	height: 30rem
+}
+.cceleste{
+	background-color: #00FFFF;
+	height: 30rem
+}
+.cazul{
+	background-color: #0000FF;
+	height: 30rem
+}
+.clila{
+	background-color: #FF00FF;
+	height: 30rem
+}
+.cmarron{
+	background-color: #C1272D;
+	height: 30rem
+}
+.cnaranja{
+	background-color: #F7931E;
+	height: 30rem
+}
+.cverde2{
+	background-color: #8CC63E;
+	height: 30rem
+}
+.ccian{
+	background-color: #3FA9F5;
+	height: 30rem
+}
+.cpiel{
+	background-color: #E7A460;
+	height: 30rem
+}
+.cvioleta{
+	background-color: #9D0689;
+	height: 30rem
+}
+.crosa{
+	background-color: #FC2E71;
+	height: 30rem
+}
+.caqua{
+	background-color: #5BB7B8;
+	height: 30rem
+}
+.cverde3{
+	background-color: #5BB88A;
+	height: 30rem
+}
+.cnaranja2{
+	background-color: #FF6700;
+	height: 30rem
+}
+.cverde4{
+	background-color: #0EF87F;
+	height: 30rem
+}
+.cpurple{
+	background-color: #734076;
+	height: 30rem
+}
+.cazul2{
+	background-color: #6087CB;
+	height: 30rem
+}
+.cgris{
+	background-color: #D8D8CE;
+	height: 30rem
+}
+.ccian2{
+	background-color: #46D2FC;
+	height: 30rem
+}
+.cverde5{
+	background-color: #18E446;
+	height: 30rem
+}
+.cceleste2{
+	background-color: #42E4F4;
+	height: 30rem
+}
+.cpurpura2{
+	background-color: #6C08B3;
+	height: 30rem
+}
+.cnaranja3{
+	background-color: #E7B40B;
+	height: 30rem
+}
+.cprueba{
+	background-color: #7B7152;
+	height: 30rem
+}
+.cpruebaroot{
+	background-color: #7B7152;
+	height: 10rem;
+	width: 400px;
+}
+a.visitedd {
+  /* Especifique los valores predeterminados no transparentes a ciertas propiedades,
+     lo que les permite ser diseñado con el estado :visited */
+  background-color: white;
+  border: 1px solid white;
+}
+
+a.visitedd:visited {
+  background-color: yellow;
+  border-color: hotpink;
+  color: hotpink;
+}
+a.aactive:active{
+	color: lime;
+}
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+select {
+  margin: 8px;
+}
+input:default {
+  box-shadow: 0 0 2px 1px coral;
+}
+input:default + label {
+  color: blue;
+}
+span:dir(ltr) {
+  background-color: blue;
+}
+
+:dir(rtl) {
+  background-color: purple;
+}
+input[type="text"]:disabled {
+  background: #ccc;
+}
+.box {
+  background: yellow;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+.box:empty {
+  background: purple;
+}
+input:enabled {
+  color: #2b2;
+}
+
+input:disabled {
+  color: #aaa;
+}
+@page:first {
+  margin-left: 50%;
+  margin-top: 50%;
+}
+.puno{
+  page-break-after: always;
+}
+p.dos:first-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+article :first-of-type {
+  background-color: pink;
+}
+#fullscreen:fullscreen {
+  padding: 42px;
+  background-color: pink;
+  border:2px solid #f00;
+  font-size: 200%;
+}
+#fullscreen:fullscreen > h1 {
+  color: red;
+}
+#fullscreen:fullscreen > p {
+  color: darkred;
+}
+#fullscreen:fullscreen > button {
+  display: none;
+}
+.red-input:focus {
+  background: yellow;
+  color: red;
+}
+.blue-input:focus {
+  background: yellow;
+  color: blue;
+}
+a.hover {
+  background-color: powderblue;
+  transition: background-color .5s;
+}
+a.hover:hover {
+  background-color: gold;
+}
+
+input:indeterminate + label {
+  background: lime;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+input {
+  border: 1px solid black;
+}
+input:in-range {
+  background-color: #C8E2F8;
+}
+input:out-of-range {
+  background-color: #91EFBF;
+  border: 2px solid red;
+}
+input:in-range + label::after {
+  content: 'bien.';
+}
+input:out-of-range + label::after {
+  content: 'fuera de rango!';
+}
+
+input.inv1:invalid {
+  background-color: #ffdddd;
+}
+form.inv1:invalid {
+  border: 5px solid #FAFAFA;
+}
+input:valid {
+  background-color: #ddffdd;
+}
+form.inv1:valid {
+  border: 5px solid #ddffdd;
+}
+input.inv1:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+input.inv1:required:invalid {
+  border-color: #C00000;
+}
+
+:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+:lang(fr) > q { quotes: '« ' ' »'; }
+:lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
+
+p.last1:last-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+
+p.type1:last-of-type {
+  color: #F7FF02;
+  font-style: italic;
+}
+
+@page :left {
+  margin: 2in 3in;
+}
+
+a.alink:link {
+  background-color: gold;
+  color: green;
+}
+
+.fancy {
+  text-shadow: 2px 2px 3px gold;
+}
+p.pnot:not(.fancy) {
+  color: green;
+}
+body.cgris:not(p.pnot) {
+  text-decoration: underline;
+}
+body.divnot :not(div):not(span) {
+  font-weight: bold;
+}
+body.pnot:not(.crazy, .fancy) {
+  font-family: sans-serif;
+}
+
+html.ccian2 {
+  font-family: sans-serif;
+}
+span,
+div em {
+  border: 1px solid green;
+  display: inline-block;
+}
+.first span:nth-child(2n+1){
+  background-color: lime;
+}
+
+table {
+  border: 1px solid blue;
+}
+/* Selecciona los últimos tres elementos */
+tr:nth-last-child(-n+3) {
+  background-color: pink;
+}
+/* Toma todos los elementos a partir del penúltimo elemento */
+tr:nth-last-child(n+2) {
+  color: blue;
+}
+/* Seleccione solo el penúltimo elemento */
+tr:nth-last-child(2) {
+  font-weight: 600;
+}
+
+span.nltype:nth-last-of-type(2) {
+  background-color: red;
+}
+
+/* Párrafos impares */
+p.noftype:nth-of-type(2n+1) {
+  color: red;
+}
+/* Párrafos pares */
+p.noftypee:nth-of-type(2n) {
+  color: yellow;
+}
+
+main :only-child {
+  color: green;
+}
+main.onoftype :only-of-type {
+  color: navy;
+}
+
+input.optionall:invalid {
+  background-color: #ffdddd;
+}
+form.optionall:invalid {
+  border: 5px solid #008080;
+}
+input.optionall:valid {
+  background-color: #ddffdd;
+}
+form.optionall:valid {
+  border: 5px solid #ddffdd;
+}
+input.optionall:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+input.optionall:required:invalid {
+  border-color: #C00000;
+}
+
+li.outofrange {
+  list-style: none;
+  margin-bottom: 1em;
+}
+input.outofrange{
+  border: 1px solid black;
+}
+input.outofrange:in-range {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+input.outofrange:out-of-range {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 2px solid red;
+}
+input.outofrange:in-range + label::after {
+  content: 'bien.';
+}
+input.outofranges:out-of-range + label::after {
+  content: '¡fuera de rango!';
+}
+
+input.readly { min-width: 20em; }
+input.readly:-moz-read-only { background: cyan; }
+input.readly:read-only { background: cyan; }
+p.readly:-moz-read-only { background: lightgray; }
+p.readly:read-only { background: lightgray; }
+p.readly[contenteditable="true"] { color: black; }
+
+input.readte { min-width: 20em; }
+input.readte:-moz-read-write { background: cyan; }
+input.readte:read-write { background: cyan; }
+p.readte:-moz-read-write { background: lightgray; }
+p.readte:read-write { background: lightgray; }
+p.readte[contenteditable="true"] { color: blue; }
+
+input.requiredd:invalid {
+  background-color: #ffdddd;
+}
+form.requiredd:invalid {
+  border: 5px solid #ffdddd;
+}
+input.requiredd:valid {
+  background-color: #ddffdd;
+}
+form.requiredd:valid {
+  border: 5px solid #ddffdd;
+}
+input.requiredd:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+input.requiredd:required:invalid {
+  border-color: #C00000;
+}
+
+@page :right {
+  margin: 2in 3in;
+}
+.ejercicioroot:root {
+  --main-color: hotpink;
+  --pane-padding: 5px 42px;
+}
+
+p.targett:target {
+  background-color: gold;
+}
+/* Agrega un pseudo-elemento dentro del elemento de destino */
+p.targett:target::before {
+  font: 70% sans-serif;
+  content: "►";
+  color: limegreen;
+  margin-right: .25em;
+}
+/* Estilo de elementos en cursiva dentro del elemento de destino */
+p.targett:target i {
+  color: red;
+}
+
+input.invalidd:invalid {
+  background-color: #ffdddd;
+}
+form.invalidd:invalid {
+  border: 5px solid #ffdddd;
+}
+input.invalidd:valid {
+  background-color: #ddffdd;
+}
+form.invalidd:valid {
+  border: 5px solid #ddffdd;
+}
+input.invalidd:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+input.invalidd:required:invalid {
+  border-color: #C00000;
+}
